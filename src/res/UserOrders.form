@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="res.UserOrders">
+  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="677" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="479b9" binding="navbarPanel" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="5" bottom="10" right="5"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14277082"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="eb7e2" class="javax.swing.JLabel" binding="navLogo">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="res/icons/nav_logo_transparent.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="72d35" class="javax.swing.JButton" binding="exitButton">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Exit"/>
+            </properties>
+          </component>
+          <component id="7edc" class="javax.swing.JLabel" binding="usernameLabel">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-3421237"/>
+              <text value="Username"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="500d7" binding="searchPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="1280" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <autoscrolls value="false"/>
+          <background color="-1"/>
+          <opaque value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="5b157" class="javax.swing.JButton" binding="newButton">
+            <constraints/>
+            <properties>
+              <text value="New Order"/>
+            </properties>
+          </component>
+          <component id="6e065" class="javax.swing.JButton" binding="cancelButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Cancel"/>
+            </properties>
+          </component>
+          <component id="9473f" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Orders"/>
+            </properties>
+          </component>
+          <component id="4d56d" class="javax.swing.JTextField" binding="searchField">
+            <constraints/>
+            <properties>
+              <preferredSize width="430" height="30"/>
+            </properties>
+          </component>
+          <component id="7f341" class="javax.swing.JButton" binding="searchButton">
+            <constraints/>
+            <properties>
+              <background color="-1"/>
+              <borderPainted value="false"/>
+              <contentAreaFilled value="true"/>
+              <focusCycleRoot value="false"/>
+              <focusPainted value="false"/>
+              <horizontalTextPosition value="0"/>
+              <icon value="res/icons/search_icon_gray.png"/>
+              <opaque value="true"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="4f9e0">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="854e8" class="javax.swing.JTable" binding="localOrdersTable">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>
